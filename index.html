@@ -3,18 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Moje portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,200, 300, 400, 500, 600|Roboto:100,400&amp;subset=latin-ext" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 	<nav id="menu">
+	<label for="main-nav" id="mobile-menu">Menu</label>
+	<input type="checkbox" id="main-nav">
 		<ul>
-			<li class="menu-item"><a href="about">O mnie</a></li>
-			<li class="menu-item"><a href="skills">Umiejętności</a></li>
-			<li class="menu-item"><a href="portfolio">Portfolio</a></li>
-			<li class="menu-item"><a href="">Kontakt</a></li>
+			<li class="menu-item"><a href="#about">O mnie</a></li>
+			<li class="menu-item"><a href="#umie">Umiejętności</a></li>
+			<li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+			<li class="menu-item"><a href="#contact">Kontakt</a></li>
 		</ul>
 	</nav>
 	<header id="header">
@@ -35,12 +39,13 @@
 	</section>
 	<!--umiejętności-->
 	<section id="skills">
-		<h2>Moje <span class="headerskills">umiejętności</span></h2>
+		<h2 id="umie">Moje <span class="headerskills">umiejętności</span></h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam impedit a, sed ratione odit deserunt pariatur corporis cum, illum porro mollitia aspernatur natus eligendi similique sit dicta libero sunt eaque?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo doloribus magni harum, molestias expedita repellat veniam adipisci deserunt debitis reiciendis et quidem voluptatibus, libero ipsum, fugiat blanditiis atque quisquam hic.Lorem ipsum dolor sit amet, consectetur adipisicing elit. In veritatis iure sunt illo porro dicta dolore similique delectus voluptatum eum reiciendis necessitatibus doloribus expedita, magnam officiis iste repudiandae consectetur quia.</p>
 		<figure class="figure"><img src="icons/html5.png" alt=""></figure>
 		<figure class="figure"><img src="icons/css3.png" alt=""></figure>
 		<figure class="figure"><img src="icons/js.png" alt=""></figure>
 		<figure class="figure"><img src="icons/jquery.png" alt=""></figure>
+		<div id="clear"></div>
 	</section>
 	<!--portfolio-->
 	<section id="portfolio">
@@ -84,19 +89,18 @@
 			<adress>tel.606 74 57 59</adress><br> email:
 			<a href="mailto:kursy@akademia108.pl"> kursy@akademia108.pl</a><br>
 			<div id="icons">
-				<a href="https://"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-				<a href="https://">	<i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				<a href="https://facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://google.com" target="_blank">	<i class="fa fa-google-plus" aria-hidden="true"></i></a>
 				<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
 				<a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 			</div>
 		</div>
-	
 		<div id="form">
 			<form action="https://formspree.io/hajdukmaciej3@gmail.com" method="post">
-			<input type="text" placeholder="Imię i nazwisko" class="input"><br>
-			<input type="email" placeholder="Adres e-mail" class="input"><br>
-			<textarea name="" id="textarea" cols="30" rows="10" placeholder="Wiadomość"></textarea><br>
-			<input type="button" value="Wyślij" class="button">
+				<input type="text" placeholder="Imię i nazwisko" class="input"><br>
+				<input type="email" placeholder="Adres e-mail" class="input"><br>
+				<textarea name="" id="textarea" cols="30" rows="10" placeholder="Wiadomość"></textarea><br>
+				<input type="button" value="Wyślij" class="button">
 			</form>
 		</div>
 		<div class="clear"></div>

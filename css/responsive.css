@@ -1,0 +1,29 @@
+@media all and (max-width: 1200px) {}
+
+@media all and (max-width: 992px) {}
+
+@media all and (max-width: 768px) {
+	#mobile-menu {
+		display: block;
+		text-align: right;
+		padding-right: 20px;
+		line-height: 40px;
+		color: #1AC056;
+	}
+	#menu ul {
+		display: none;
+	}
+	#menu #main-nav:checked + ul {
+		display: block;
+	}
+	#about figure img,
+	#about #img,
+	#about p{
+		width: 100%;
+		text-align: center	
+	}
+	
+	
+	}
+
+@media all and (max-width: 480px) {}
